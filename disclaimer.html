@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Defendbyto</title>
+<link rel="icon" type="image/png" href="/images/fav.png">
+
+</head>
+
+<body style="margin:0;font-family:Segoe UI, sans-serif;background:#f8fafc;">
+
+<!-- ================= HEADER ================= -->
+
+<header style="
+position:fixed;
+top:0;
+width:100%;
+height:75px;
+background:#ffffff;
+display:flex;
+align-items:center;
+box-shadow:0 2px 12px rgba(0,0,0,0.05);
+z-index:1000;
+">
+
+<div style="
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+">
+
+<!-- LOGO -->
+<div class="site-logo">
+    <img src="/images/fav.png" alt="Defendbyto Logo">
+    <a href="/">Defendbyto</a>
+</div>
+
+<style>
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-logo img {
+    width: 32px;   /* size adjust kar sakte ho */
+    height: 32px;
+}
+
+.site-logo a {
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;   /* black color */
+    font-family: Arial, sans-serif;
+}
+</style>
+
+<!-- NAV CENTER -->
+<div style="
+display:flex;
+align-items:center;
+gap:30px;
+">
+
+<a href="/index.html" style="
+text-decoration:none;
+color:#111;
+position:relative;
+font-weight:500;
+display:inline-block;
+">
+Home
+<span style="position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#FFC107;transition:0.3s;"></span>
+</a>
+
+<a href="/index.html#about" style="
+text-decoration:none;
+color:#111;
+position:relative;
+font-weight:500;
+display:inline-block;
+">
+About
+<span style="position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#FFC107;transition:0.3s;"></span>
+</a>
+
+<a href="/index.html#benefits" style="
+text-decoration:none;
+color:#111;
+position:relative;
+font-weight:500;
+display:inline-block;
+">
+Benefits
+<span style="position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#FFC107;transition:0.3s;"></span>
+</a>
+
+<a href="/index.html#protection" style="
+text-decoration:none;
+color:#111;
+position:relative;
+font-weight:500;
+display:inline-block;
+">
+Protection
+<span style="position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#FFC107;transition:0.3s;"></span>
+</a>
+
+<a href="/index.html#faq" style="
+text-decoration:none;
+color:#111;
+position:relative;
+font-weight:500;
+display:inline-block;
+">
+FAQ
+<span style="position:absolute;left:0;bottom:-6px;width:0;height:2px;background:#FFC107;transition:0.3s;"></span>
+</a>
+
+</div>
+
+<!-- BUTTON RIGHT -->
+<a href="/contact-us.html" style="
+background:#FFC107;
+padding:10px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+color:#111;
+white-space:nowrap;
+">
+Contact Now
+</a>
+
+</div>
+</header>
+
+<script>
+document.querySelectorAll("header a span").forEach(span=>{
+  const parent = span.parentElement;
+  parent.addEventListener("mouseenter",()=>{ span.style.width="100%"; });
+  parent.addEventListener("mouseleave",()=>{ span.style.width="0%"; });
+});
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+
+@media (max-width: 992px) {
+header div[style*="max-width:1200px"]{
+flex-wrap:wrap;
+height:auto;
+padding:10px 20px;
+}
+
+header div[style*="gap:30px"]{
+width:100%;
+justify-content:center;
+flex-wrap:wrap;
+margin:10px 0;
+}
+
+header a[href="/contact-us.html"]{
+margin-top:10px;
+}
+}
+</style>
+
+
+
+
+<section id="disclaimer" style="padding:120px 0 80px 0;background:#f8f9fb;">
+<div style="max-width:900px;margin:auto;padding:0 20px;">
+
+<h1 style="font-size:32px;font-weight:700;margin-bottom:10px;">
+Disclaimer
+</h1>
+
+<p style="font-size:14px;color:#666;margin-bottom:35px;">
+Last Updated: 18-02-2026
+</p>
+
+<p>
+Please read this Disclaimer carefully before using the Defendbyto website (“the Site”) or purchasing any services from us.
+By accessing or using the Site, you agree to the terms outlined below. If you do not agree, please discontinue use of the Site.
+</p>
+
+<!-- 1 -->
+<h3>1. General Information</h3>
+<p>
+All content provided on this Site, including text, graphics, images, and other materials, is for general informational purposes only. 
+We make no guarantees regarding the accuracy, completeness, or reliability of any information presented.
+</p>
+
+<!-- 2 -->
+<h3>2. Independent Service Provider</h3>
+<p>
+Defendbyto operates as an independent digital security service provider. 
+We are not affiliated with, endorsed by, or officially connected with any third-party antivirus software brands.
+</p>
+
+<!-- 3 -->
+<h3>3. Service & Product Information</h3>
+<p>
+While we strive to provide accurate descriptions of our services, there may be occasional inaccuracies, typographical errors, or outdated information. 
+We reserve the right to update, modify, or correct any content without prior notice.
+</p>
+
+<!-- 4 -->
+<h3>4. Use of Website</h3>
+<p>
+Your use of the Site is at your own risk. 
+We are not responsible for interruptions, technical issues, or temporary unavailability of the Site.
+</p>
+
+<p>
+We are not liable for:
+</p>
+
+<ul>
+<li>Errors or omissions in website content</li>
+<li>Technical malfunctions or service disruptions</li>
+<li>Damage to your device resulting from website use</li>
+</ul>
+
+<!-- 5 -->
+<h3>5. No Professional Advice</h3>
+<p>
+The information provided on this Site does not constitute legal, financial, or professional advice.
+For specific guidance, please consult a qualified professional.
+</p>
+
+<!-- 6 -->
+<h3>6. Third-Party Links</h3>
+<p>
+The Site may contain links to third-party websites.
+We are not responsible for their content, policies, or practices.
+Accessing third-party websites is done at your own discretion.
+</p>
+
+<!-- 7 -->
+<h3>7. Advertising & Affiliate Disclosure</h3>
+<p>
+We may use third-party advertising platforms including Microsoft Advertising.
+Some links may generate commission-based compensation.
+However, advertising relationships do not influence our service recommendations.
+</p>
+
+<!-- 8 -->
+<h3>8. No Warranty</h3>
+<p>
+All services and content are provided “as is” and “as available” without warranties of any kind, either express or implied.
+We do not guarantee uninterrupted access, specific security outcomes, or error-free operation.
+</p>
+
+<!-- 9 -->
+<h3>9. Limitation of Liability</h3>
+<p>
+To the fullest extent permitted by law, Defendbyto shall not be liable for any indirect, incidental, or consequential damages, including loss of data, revenue, or business interruption.
+</p>
+
+<p>
+Total liability shall not exceed the amount paid for the specific service in question.
+</p>
+
+<!-- 10 -->
+<h3>10. Governing Law</h3>
+<p>
+This Disclaimer is governed by the laws of the State of Texas, United States.
+Any disputes shall be resolved in courts located within the United States.
+</p>
+
+<!-- 11 -->
+<h3>11. Changes to This Disclaimer</h3>
+<p>
+We reserve the right to update or modify this Disclaimer at any time.
+Continued use of the Site constitutes acceptance of any changes.
+</p>
+
+<!-- 12 -->
+<h3>12. Contact Information</h3>
+<p>
+If you have questions regarding this Disclaimer, please contact us:
+</p>
+
+<p>
+Email: info@defendbyto.com<br>
+Phone: +1 (877) 496-7174
+</p>
+
+</div>
+</section>
+
+
+
+
+
+
+
+<script>
+function openJivoChat() {
+    if (window.jivo_api) {
+        jivo_api.open();
+    }
+}
+</script>
+
+<!-- ================= FOOTER ================= -->
+
+<footer style="
+background:#0e0e0f;
+color:#ccc;
+padding:70px 0 0 0;
+position:relative;
+font-family:inherit;
+">
+
+<!-- TOP GRADIENT LINE -->
+<div style="
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:3px;
+background:linear-gradient(90deg,#FFC107,#ff9800,#FFC107);
+"></div>
+
+<div style="
+max-width:1200px;
+margin:auto;
+padding:0 25px 50px 25px;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:50px;
+">
+
+<!-- BRAND -->
+<div style="flex:1;min-width:260px;">
+<div style="
+font-size:24px;
+font-weight:700;
+color:#fff;
+margin-bottom:18px;
+letter-spacing:0.5px;
+">
+Defendbyto
+</div>
+
+<p style="
+font-size:14.5px;
+line-height:1.7;
+color:#9e9e9e;
+max-width:380px;
+">
+We deliver advanced cybersecurity protection to keep your systems secure, optimized, and safeguarded against modern digital threats.
+</p>
+</div>
+
+
+<!-- QUICK LINKS -->
+<div style="flex:1;min-width:200px;">
+<h4 style="color:#fff;margin-bottom:20px;font-size:16px;">Quick Links</h4>
+
+<div class="footer-links">
+<a href="/index.html#home">Home</a>
+<a href="/index.html#benefits">Benefits</a>
+<a href="/index.html#about">About</a>
+<a href="/index.html#protection">Protection</a>
+<a href="/index.html#faq">FAQ</a>
+
+</div>
+
+</div>
+
+
+<!-- POLICIES -->
+<div style="flex:1;min-width:200px;">
+<h4 style="color:#fff;margin-bottom:20px;font-size:16px;">Policies</h4>
+
+<div class="footer-policies">
+  <a href="/privacy-policy.html">Privacy Policy</a>
+  <a href="/terms-and-conditions.html">Terms & Conditions</a>
+  <a href="/refund-policy.html">Refund Policy</a>
+  <a href="/disclaimer.html">Disclaimer</a>
+</div>
+
+</div>
+
+
+<!-- CONTACT -->
+<div style="flex:1;min-width:220px;">
+<h4 style="color:#fff;margin-bottom:20px;font-size:16px;">Contact</h4>
+
+<div style="display:flex;flex-direction:column;gap:12px;font-size:14px;color:#9e9e9e;">
+<span>+1 (877) 496-7174</span>
+<span>info@defendbyto.com</span>
+</div>
+
+<a href="/contact-us.html" style="
+display:inline-block;
+margin-top:18px;
+background:#FFC107;
+color:#111;
+padding:10px 18px;
+border-radius:6px;
+font-weight:600;
+text-decoration:none;
+font-size:13px;
+transition:0.3s ease;
+">
+Contact Now →
+</a>
+
+</div>
+
+</div>
+
+
+<!-- DISCLAIMER STRIP -->
+<div style="
+background:#141414;
+padding:16px 20px;
+text-align:center;
+font-size:13px;
+color:#bdbdbd;
+border-top:1px solid rgba(255,255,255,0.05);
+">
+We are an independent security service provider. We are not affiliated with any third-party antivirus brands.
+</div>
+
+
+<!-- COPYRIGHT -->
+<div style="
+background:#0a0a0a;
+padding:20px;
+text-align:center;
+font-size:13px;
+color:#7a7a7a;
+border-top:1px solid rgba(255,255,255,0.04);
+">
+© 2026 Defendbyto. All Rights Reserved.
+</div>
+
+</footer>
+<style>
+
+/* ===== QUICK LINKS FIX ===== */
+.footer-links{
+display:flex;
+flex-direction:column;   /* vertical */
+gap:12px;
+font-size:14px;
+}
+
+.footer-links a{
+display:inline-block;
+width:fit-content;
+position:relative;
+color:#9e9e9e;
+text-decoration:none;
+transition:color 0.3s ease;
+}
+
+.footer-links a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-4px;
+width:0;
+height:2px;
+background:#FFC107;
+transition:width 0.3s ease;
+}
+
+.footer-links a:hover{
+color:#ffffff;
+}
+
+.footer-links a:hover::after{
+width:100%;
+}
+
+
+/* ===== POLICIES FIX ===== */
+.footer-policies{
+display:flex;
+flex-direction:column;
+gap:12px;
+font-size:14px;
+}
+
+.footer-policies a{
+display:inline-block;
+width:fit-content;
+position:relative;
+color:#9e9e9e;
+text-decoration:none;
+transition:color 0.3s ease;
+}
+
+.footer-policies a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-4px;
+width:0;
+height:2px;
+background:#FFC107;
+transition:width 0.3s ease;
+}
+
+.footer-policies a:hover{
+color:#ffffff;
+}
+
+.footer-policies a:hover::after{
+width:100%;
+}
+
+</style>
+
+</body>
+</html>
