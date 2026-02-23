@@ -8,6 +8,7 @@
 
 
 
+<script src="//code.jivosite.com/widget/qYm4IZSGp3" async=""></script>
 </head>
 
 <body style="margin:0;font-family:Segoe UI, sans-serif;background:#f8fafc;">
@@ -535,7 +536,7 @@ transform:translateY(-8px);
 
 <!-- ================= BENEFITS SECTION ================= -->
 <section id="benefits" style="
-padding:10px 0 20px 0;
+padding:30px 0 40px 0;
 background:linear-gradient(180deg,#f8fafc,#eef2f7);
 scroll-margin-top:90px;
 ">
@@ -543,8 +544,8 @@ scroll-margin-top:90px;
 <div style="max-width:1200px;margin:auto;padding:0 20px;">
 
 <!-- TITLE -->
-<div style="text-align:center;margin-bottom:55px;">
-<h2 style="font-size:30px;font-weight:800;margin-bottom:10px;">
+<div style="text-align:center;margin-bottom:50px;">
+<h2 style="font-size:32px;font-weight:800;margin-bottom:12px;">
 Advanced <span style="color:#FFA500;">Security Features</span>
 </h2>
 <p style="font-size:15px;color:#555;max-width:620px;margin:auto;line-height:1.6;">
@@ -553,57 +554,56 @@ Powerful protection system built to defend, optimize and monitor your devices wi
 </div>
 
 <!-- GRID -->
-<div class="benefit-grid" style="
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-">
+<div class="benefit-grid">
 
 <!-- CARD -->
-<div class="benefit-card">
-<div class="icon-circle">01</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+
+<div class="icon-circle">
+🛡️
+</div>
 <h3>Real-Time Threat Shield</h3>
 <p>Instantly detects and blocks malware, spyware and suspicious processes in real-time.</p>
 </div>
 
-<div class="benefit-card">
-<div class="icon-circle">02</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+<div class="icon-circle">🔐</div>
 <h3>Ransomware Protection</h3>
 <p>Prevents file encryption attempts and safeguards critical documents from extortion attacks.</p>
 </div>
 
-<div class="benefit-card">
-<div class="icon-circle">03</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+<div class="icon-circle">🔎</div>
 <h3>Deep System Scanner</h3>
 <p>Advanced scanning engine inspects hidden files, startup entries and registry paths.</p>
 </div>
 
-<div class="benefit-card">
-<div class="icon-circle">04</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+<div class="icon-circle">🌐</div>
 <h3>Web & Phishing Guard</h3>
 <p>Blocks malicious websites and phishing attempts before they compromise your data.</p>
 </div>
 
-<div class="benefit-card">
-<div class="icon-circle">05</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+<div class="icon-circle">👨‍💻</div>
 <h3>24/7 Expert Assistance</h3>
-<p>Certified technicians available to assist with setup, troubleshooting and threat removal.</p>
+<p>Certified technicians available to assist with setup and troubleshooting.</p>
 </div>
 
-<div class="benefit-card">
-<div class="icon-circle">06</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+<div class="icon-circle">⚡</div>
 <h3>Performance Optimization</h3>
-<p>Lightweight protection engine keeps your system fast and responsive at all times.</p>
+<p>Lightweight protection engine keeps your system fast and responsive.</p>
 </div>
 
-<div class="benefit-card">
-<div class="icon-circle">07</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+<div class="icon-circle">☁️</div>
 <h3>Secure Cloud Backup</h3>
 <p>Encrypted backup ensures your important files are always recoverable.</p>
 </div>
 
-<div class="benefit-card">
-<div class="icon-circle">08</div>
+<div class="benefit-card" onclick="jivo_api.open();">
+<div class="icon-circle">🤖</div>
 <h3>AI Smart Detection</h3>
 <p>Machine-learning technology adapts to evolving cyber threats automatically.</p>
 </div>
@@ -611,30 +611,36 @@ gap:30px;
 </div>
 </div>
 </section>
+
 <style>
+
+.benefit-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:28px;
+}
 
 .benefit-card{
 background:#fff;
-padding:30px 28px;
-border-radius:20px;
+padding:32px 28px;
+border-radius:18px;
 border:1px solid #e6e9ef;
 transition:all 0.35s ease;
 cursor:pointer;
-position:relative;
-overflow:hidden;
-box-shadow:0 6px 18px rgba(0,0,0,0.04);
+text-align:left;
+box-shadow:0 6px 20px rgba(0,0,0,0.04);
 }
 
 .benefit-card:hover{
 border:1px solid #FFA500;
-transform:translateY(-8px);
+transform:translateY(-6px);
 box-shadow:0 20px 45px rgba(0,0,0,0.08);
 }
 
 .benefit-card h3{
 font-size:17px;
 font-weight:700;
-margin:15px 0 10px 0;
+margin:16px 0 10px 0;
 color:#111;
 }
 
@@ -646,34 +652,31 @@ margin:0;
 }
 
 .icon-circle{
-width:48px;
-height:48px;
+width:52px;
+height:52px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:14px;
-font-weight:700;
+font-size:22px;
 background:#f1f4f8;
-color:#111;
 transition:all 0.3s ease;
 }
 
 .benefit-card:hover .icon-circle{
 background:#FFA500;
-color:#111;
-transform:scale(1.1);
+transform:scale(1.08);
 }
 
 @media(max-width:1024px){
 .benefit-grid{
-grid-template-columns:repeat(2,1fr) !important;
+grid-template-columns:repeat(2,1fr);
 }
 }
 
 @media(max-width:600px){
 .benefit-grid{
-grid-template-columns:1fr !important;
+grid-template-columns:1fr;
 }
 }
 
