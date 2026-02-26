@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jivosite.com/widget/qYm4IZSGp3" async=""></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/images/fav.png">
+<title>Security Report</title>
+
+<style>
+body{
+margin:0;
+background:linear-gradient(135deg,#f3f4f6,#e5e7eb);
+font-family:Arial;
+display:flex;
+align-items:center;
+justify-content:center;
+height:100vh;
+}
+
+.card{
+background:#ffffff;
+padding:70px;
+border-radius:20px;
+box-shadow:0 40px 100px rgba(0,0,0,0.15);
+text-align:center;
+max-width:550px;
+width:90%;
+animation:fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.issue{
+margin-top:20px;
+font-size:26px;
+font-weight:700;
+color:#ef4444;
+animation:blinkText 1s infinite;
+}
+
+@keyframes blinkText{
+0%{opacity:1;}
+50%{opacity:0.4;}
+100%{opacity:1;}
+}
+
+.btn{
+margin-top:40px;
+padding:16px 35px;
+background:#ffcc00;
+border:none;
+border-radius:40px;
+font-weight:700;
+font-size:16px;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(255,204,0,0.4);
+animation:blinkBtn 1.2s infinite;
+}
+
+@keyframes blinkBtn{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+}
+
+.btn:hover{
+background:#ffd633;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Scan Summary</h2>
+
+<p style="margin-top:20px;">Reported Issue:</p>
+
+<div class="issue" id="issueText"></div>
+
+<p style="margin-top:30px;color:#6b7280;font-size:14px;">
+Immediate assistance recommended to resolve this issue.
+</p>
+
+<button class="btn" onclick="goToAssistance()">
+Get Assistance
+</button>
+
+</div>
+
+<script>
+
+// Show selected issue
+const params=new URLSearchParams(window.location.search);
+document.getElementById("issueText").innerText=params.get("issue");
+
+// Redirect button
+function goToAssistance(){
+  window.location.href="get-assistance.html";
+}
+
+// ================= AUTO OPEN JIVO CHAT =================
+window.onload=function(){
+  setTimeout(()=>{
+    if(window.jivo_api){
+      jivo_api.open();
+    }
+  },1500);
+};
+</script>
+
+</body>
+</html>

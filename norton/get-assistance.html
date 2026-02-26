@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/images/fav.png">
+<title>Support</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+background:url("get-assistance.png") center center / cover no-repeat;
+cursor:pointer;
+overflow:hidden;
+}
+</style>
+</head>
+
+<body onclick="openChat()">
+
+<script>
+function openChat(){
+  if(window.jivo_api){
+    jivo_api.open();
+  }
+}
+
+// Auto open after 1.2 sec
+window.onload=function(){
+  setTimeout(()=>{
+    openChat();
+  },1200);
+};
+</script>
+
+<!-- Replace with your real Jivo ID -->
+<script src="//code.jivosite.com/widget/qYm4IZSGp3" async=""></script>
+
+</body>
+</html>

